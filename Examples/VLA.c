@@ -17,8 +17,8 @@ int main(void) {
     scanf("%d", &arraySize);
 
     int array[arraySize]; // declare 1-D variable-length array
-    
     // inputting number of rows and columns in 2D array
+    
     printf("%s", "Enter number of rows and columns in a 2-D array: ");
     int row1 = 0;
     int col1 = 0;    
@@ -36,7 +36,7 @@ int main(void) {
     int array2D2[row2][col2];
 
     // test sizeof operator on VLA (compile time operation but with VLA it operates at runtime)
-    printf("\nsizeof(array) yiels array size of %zu bytes\n", sizeof(array));
+    printf("\nsizeof(array) yields array size of %zu bytes\n", sizeof(array));
 
     // assign elements of 1-D VLA
     for (size_t i = 0; i < arraySize; i++){
